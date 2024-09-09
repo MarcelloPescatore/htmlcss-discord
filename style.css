@@ -239,7 +239,33 @@
         margin: auto;
         justify-content: center;
         align-items: center;
-        padding: 60px 0px
+        padding: 80px 0px;
+
+        .box_one{
+            width: 60%;
+            img{
+                width: 500px;
+                height: 500px;
+            }
+        }
+        
+        .box_two{
+            width: 40%;
+            h2{
+                font-size: 2.5rem;
+                font-weight: 800;
+                line-height: 120%;
+                color: var(--color-text_primary);
+            }
+
+            p{
+                font-size: 1.25rem;
+                line-height: 130%;
+                font-weight: 400;
+                color: var(--color-text_primary);
+                padding: 20px 0px;
+            }
+        }
     }
 
     /* #region hero section */
@@ -304,35 +330,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .container{
-
-        .box_one{
-            width: 60%;
-            img{
-                width: 500px;
-                height: 500px;
-            }
-        }
-        
-        .box_two{
-            width: 40%;
-            h2{
-                font-size: 2.5rem;
-                font-weight: 800;
-                line-height: 120%;
-                color: var(--color-text_primary);
-            }
-
-            p{
-                font-size: 1.25rem;
-                line-height: 130%;
-                font-weight: 400;
-                color: var(--color-text_primary);
-                padding: 20px 0px;
-            }
-        }
     }
 
     #second{

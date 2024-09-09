@@ -4,11 +4,19 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: sans-serif;
+        font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
 
     .first_button{
         background-color: var(--bg-first_button);
+        border: none;
+        padding: 6px 12px;
+        border-radius: 16px;
+    }
+
+    .second_button{
+        background-color: var(--bg-second_button);
+        color: white;
         border: none;
         padding: 6px 12px;
         border-radius: 16px;
@@ -33,7 +41,7 @@
 /* #region debug */
 
     /* #region debug header */
-       /*  .debug .header{
+        .debug .header{
             height: 80px;
             background-color: lightblue;
         }
@@ -47,7 +55,7 @@
             div{
                 border: 1px dashed;
             }
-        } */
+        }
     /* #endregion debug header */
     /* #region debug main */
         .debug .container_main{
@@ -205,7 +213,7 @@
 
 /* #region main style */
 
-    .container_main, .container_main_second, .container_main_third, .container_main_fourth, .container_main_fifth{
+    .hero, .container_main_second, .container_main_third, .container_main_fourth, .container_main_fifth{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -215,17 +223,66 @@
         flex-direction: row-reverse;
     }
 
-    .container_main:first-child .contents_main{
-        display: flex;
-        width: 50%;
-        margin: auto;
-    }
-
-    .contents_main{
+    .container{
         display: flex;
         width: 70%;
         margin: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
     }
+
+    /* #region hero section */
+        .hero{
+            background-image: url(./img/jumbo.png);
+            background-size: cover;
+        }
+
+        .container_hero{
+            display: flex;
+            width: 50%;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            padding: 90px 0px 120px;
+        }
+
+        .container_hero .contents{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            h1{
+                font-size: 3rem;
+                font-weight: 800;
+                line-height: 120%;
+                text-align: center;
+                color: var(--color-text_secondary);
+            }
+
+            p{
+                font-size: 1.5rem;
+                line-height: 130%;
+                font-weight: 400;
+                text-align: center;
+                color: var(--color-text_secondary);
+                padding: 20px 0px;
+            }
+
+            div{
+                display: flex;
+                justify-content: space-around;
+                width: 70%;
+            }
+        }
+
+        .hero_button{
+            font-size: 1.125rem;
+            padding: 8px 14px;
+            border-radius: 18px;
+        }
+    /* #endregion hero section */
 
     /* box style */
 

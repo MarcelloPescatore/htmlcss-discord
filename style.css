@@ -434,7 +434,7 @@
         vertical-align: middle;
 
         span{
-            font-size: 0.7rem;
+            font-size: 0.5rem;
             vertical-align: top;
         }
     }
@@ -461,9 +461,6 @@
     }
 }
 
-.contents_footer_first{
-    width: 100%;
-}
 
 .contents_footer_second{
     width: 100%;

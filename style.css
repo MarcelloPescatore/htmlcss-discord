@@ -28,6 +28,7 @@
 
 :root{
     --bg-header: #3161e0;
+    --bg-wave: #f6f6f6;
     --bg-first_button: white;
     --bg-second_button: #23272a;
     --bg-third_button: #8ea1e1;
@@ -213,13 +214,14 @@
 
 /* #region main style */
 
-    .hero, .container_main_second, .container_main_third, .container_main_fourth, .container_main_fifth{
+    .main{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .container_main_third .contents_main{
+    #second .container{
         flex-direction: row-reverse;
     }
 
@@ -229,13 +231,16 @@
         margin: auto;
         justify-content: center;
         align-items: center;
-        padding: 40px;
+        padding: 60px 0px
     }
 
     /* #region hero section */
         .hero{
             background-image: url(./img/jumbo.png);
             background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .container_hero{
@@ -284,27 +289,57 @@
         }
     /* #endregion hero section */
 
-    /* box style */
-
-    .box_violet{
-        height: 100%;
-        width: 100%;
+    /* #region why discord */
+        
+    .why_discord{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .box_one{
-        height: 100%;
-        width: 60%;
+    .container{
+
+        .box_one{
+            width: 60%;
+            img{
+                width: 500px;
+                height: 500px;
+            }
+        }
+        
+        .box_two{
+            width: 40%;
+            h2{
+                font-size: 2.5rem;
+                font-weight: 800;
+                line-height: 120%;
+                color: var(--color-text_primary);
+            }
+
+            p{
+                font-size: 1.25rem;
+                line-height: 130%;
+                font-weight: 400;
+                color: var(--color-text_primary);
+                padding: 20px 0px;
+            }
+        }
     }
 
-    .box_two{
-        height: 100%;
-        width: 40%;
+    #second{
+        background-color: var(--bg-wave);
     }
 
-    .box_green{
-        height: 100%;
-        width: 100%;
+    #second .container{
+        .box_one{
+            display: flex;
+            justify-content: flex-end;
+        }
     }
+    
+
+    /* #endregion why discord */
 
 /* #endregion main style */
 

@@ -22,6 +22,14 @@
         border-radius: 16px;
     }
 
+    .third_button{
+        background-color: var(--bg-third_button);
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 16px;
+    }
+
 /* #endregion common */
 
 /* #region assets */
@@ -329,15 +337,63 @@
 
     #second{
         background-color: var(--bg-wave);
+
+        .container{
+            .box_one{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
     }
 
-    #second .container{
-        .box_one{
+    #fourth{
+        background-color: var(--bg-wave);
+
+        .container{
             display: flex;
-            justify-content: flex-end;
+            flex-direction: column;
+            align-items: center;
+
+            div{
+                h2{
+                    font-size: 2.5rem;
+                    font-weight: 800;
+                    line-height: 120%;
+                    color: var(--color-text_primary);
+                    text-align: center;
+                }
+    
+                p{
+                    font-size: 1.25rem;
+                    line-height: 130%;
+                    font-weight: 400;
+                    color: var(--color-text_primary);
+                    padding: 20px 0px;
+                    text-align: center;
+                }
+
+            }
         }
     }
     
+    .cta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #title{
+            /* background-image: url(./img/stars.svg); */
+            
+            h3{
+                font-size: 2rem;
+                font-weight: 800;
+                line-height: 120%;
+                color: var(--color-text_primary);
+                text-align: center;
+                padding-bottom: 25px;
+            }  
+        }
+    }
 
     /* #endregion why discord */
 

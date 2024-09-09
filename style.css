@@ -8,6 +8,20 @@
 
 /* #endregion common */
 
+/* #region assets */
+
+:root{
+    --bg-header: #3161e0;
+    --bg-first_button: white;
+    --bg-second_button: #23272a;
+    --bg-third_button: #8ea1e1;
+    --color-text_primary: #23272a;
+    --color-text_secondary: white;
+    --color-text_tertiary: #7289da;
+}
+
+/* #endregion assets */
+
 /* #region debug */
 
     /* #region debug header */

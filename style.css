@@ -30,6 +30,16 @@
         border-radius: 16px;
     }
 
+    .wave{
+        width: 100%;
+        filter:brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4114%) hue-rotate(75deg) brightness(111%) contrast(93%);
+    }
+
+    .wave_1{
+        transform: scaleY(-1);
+        width: 100%;
+        filter:brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4114%) hue-rotate(75deg) brightness(111%) contrast(93%);
+    }
 /* #endregion common */
 
 /* #region assets */

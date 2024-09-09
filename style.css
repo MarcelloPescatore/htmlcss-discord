@@ -4,6 +4,14 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    .first_button{
+        background-color: var(--bg-first_button);
+        border: none;
+        padding: 6px 12px;
+        border-radius: 16px;
     }
 
 /* #endregion common */
@@ -25,7 +33,7 @@
 /* #region debug */
 
     /* #region debug header */
-        .debug .header{
+       /*  .debug .header{
             height: 80px;
             background-color: lightblue;
         }
@@ -39,7 +47,7 @@
             div{
                 border: 1px dashed;
             }
-        }
+        } */
     /* #endregion debug header */
     /* #region debug main */
         .debug .container_main{
@@ -138,6 +146,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: var(--bg-header);
+        padding: 20px 0px;
     }
     .container_header{
         margin: auto;
@@ -168,14 +178,13 @@
 
             &#link{
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
                 width: 50%;
                 
                 a{
                     text-decoration: none;
-                    color: black;
-                    padding: 0px 5px;
+                    color: white;
                 }
             }
 

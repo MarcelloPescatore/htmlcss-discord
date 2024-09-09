@@ -342,7 +342,12 @@
         align-items: center;
     }
 
+    #first{
+        width: 100%;
+    }
+
     #second{
+        width: 100%;
         background-color: var(--bg-wave);
 
         .container{
@@ -354,6 +359,7 @@
     }
 
     #fourth{
+        width: 100%;
         background-color: var(--bg-wave);
 
         .container{

@@ -480,6 +480,16 @@
     }
 }
 
+#social{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 30px;
+        height: 30px;
+        filter: brightness(1000%) invert(100%);
+    }
+}
 
 .contents_footer_second{
     width: 100%;
